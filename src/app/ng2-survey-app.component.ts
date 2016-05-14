@@ -1,13 +1,24 @@
-import { Component } from '@angular/core';
-import { MdButton } from '@angular2-material/button';
+import { OnInit, Component } from '@angular/core';
+import { MdToolbar } from '@angular2-material/toolbar';
+import { HomeComponent } from './+home';
+import { Routes, Router, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router';
 
 @Component({
   moduleId: module.id,
   selector: 'ng2-survey-app-app',
   templateUrl: 'ng2-survey-app.component.html',
   styleUrls: ['ng2-survey-app.component.css'],
-  directives: [MdButton]
+  directives: [MdToolbar, ROUTER_DIRECTIVES],
+  providers: [ROUTER_PROVIDERS]
 })
-export class Ng2SurveyAppAppComponent {
-  title = 'ng2-survey-app works!';
+@Routes([
+  {path: '/', component: HomeComponent}
+])
+// FIXME: replace OnInit hack with useAsDefault
+export class Ng2SurveyAppAppComponent implements OnInit {
+  title = 'Survey Application';
+  constructor(private router: Router) {}
+  ngOnInit() {
+    this.router.navigate(['/']);
+  }
 }
