@@ -3,7 +3,9 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
-  '@angular2-material': 'vendor/@angular2-material'
+  '@angular2-material': 'vendor/@angular2-material',
+  'angular2-moment': 'vendor/angular2-moment',
+  'moment': 'vendor/moment'
 };
 
 /** User packages configuration. */
@@ -68,6 +70,16 @@ const packages: any = {
     defaultExtension: 'js',
     main: 'toolbar.js'
   },
+  'angular2-moment': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'index.js'
+  },
+  'moment': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'moment.js'
+  }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
