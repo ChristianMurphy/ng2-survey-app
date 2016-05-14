@@ -1,0 +1,37 @@
+<md-card *ngFor="let survey of surveys">
+  <md-card-title>
+    {{ survey.name }}
+  </md-card-title>
+  <md-card-subtitle>
+    Availible since 
+    <time>
+      {{ survey.start | amTimeAgo }}
+    </time>
+    and is due
+    <time>
+      {{ survey.end | amTimeAgo }}
+    </time>
+  </md-card-subtitle>
+  <md-card-actions>
+    <button md-button>
+      START
+    </button>
+  </md-card-actions>
+</md-card>
+
+<md-card *ngIf="surveys.length <= 0">
+  <md-card-title>
+    No Surveys Availible
+  </md-card-title>
+  <md-card-subtitle>
+    check back later
+  </md-card-subtitle>
+  <md-card-content>
+    <p>
+      We checked and there are currently no surveys availible to be taken.
+    </p>
+    <p>
+      You will recieve a notification when your next survey is availble.
+    </p>
+  </md-card-content>
+</md-card>
