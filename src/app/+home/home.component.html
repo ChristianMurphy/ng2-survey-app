@@ -1,3 +1,30 @@
-<p>
-  home works!
-</p>
+<md-nav-list *ngIf="surveys.length > 0">
+  <h3 md-subheader>
+    Surveys
+  </h3>
+  <md-list-item *ngFor="let survey of surveys">
+    <h3 md-line>
+      Availible from {{ survey.start }} until {{ survey.end }}
+    </h3>
+    <a md-line href="{{ survey.link }}">
+      start
+    </a>
+  </md-list-item>
+</md-nav-list>
+
+<md-card *ngIf="surveys.length <= 0">
+  <md-card-title>
+    No Surveys Availible
+  </md-card-title>
+  <md-card-subtitle>
+    check back later
+  </md-card-subtitle>
+  <md-card-content>
+    <p>
+      We checked and there are currently no surveys availible to be taken.
+    </p>
+    <p>
+      You will recieve a notification when your next survey is availble.
+    </p>
+  </md-card-content>
+</md-card>

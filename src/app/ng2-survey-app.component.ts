@@ -2,6 +2,7 @@ import { OnInit, Component } from '@angular/core';
 import { MdToolbar } from '@angular2-material/toolbar';
 import { HomeComponent } from './+home';
 import { Routes, Router, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router';
+import { SettingsComponent } from './+settings';
 
 @Component({
   moduleId: module.id,
@@ -12,7 +13,8 @@ import { Routes, Router, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/ro
   providers: [ROUTER_PROVIDERS]
 })
 @Routes([
-  {path: '/', component: HomeComponent}
+  {path: '/', component: HomeComponent},
+  {path: '/settings', component: SettingsComponent}
 ])
 // FIXME: replace OnInit hack with useAsDefault
 export class Ng2SurveyAppAppComponent implements OnInit {
