@@ -7,7 +7,10 @@ import {
 } from '@angular/core/testing';
 import { Ng2SurveyAppAppComponent } from '../app/ng2-survey-app.component';
 
-beforeEachProviders(() => [Ng2SurveyAppAppComponent]);
+
+beforeEachProviders(() => [
+  Ng2SurveyAppAppComponent
+]);
 
 describe('App: Ng2SurveyApp', () => {
   it('should create the app',
@@ -15,8 +18,8 @@ describe('App: Ng2SurveyApp', () => {
     expect(app).toBeTruthy();
   }));
 
-  it('should have as title \'ng2-survey-app works!\'',
+  it('should have as title \'Survey Application\'',
       inject([Ng2SurveyAppAppComponent], (app: Ng2SurveyAppAppComponent) => {
-    expect(app.title).toEqual('ng2-survey-app works!');
+    expect(app.title).toEqual('Survey Application');
   }));
 });
