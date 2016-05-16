@@ -1,6 +1,14 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <md-toolbar color="primary">
   <span>
     {{ title }}
   </span>
+  <span class="fill-remaining-space"></span>
+  <a [routerLink]="['/settings']">
+    <md-icon>
+      settings
+    </md-icon>
+  </a>
 </md-toolbar>
 <router-outlet></router-outlet>

@@ -1,7 +1,11 @@
 import { OnInit, Component, ViewEncapsulation } from '@angular/core';
-import { MdToolbar } from '@angular2-material/toolbar';
-import { HomeComponent } from './+home';
 import { Routes, Router, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router';
+import { HTTP_PROVIDERS } from '@angular/http';
+
+import { MdToolbar } from '@angular2-material/toolbar';
+import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
+
+import { HomeComponent } from './+home';
 import { SettingsComponent } from './+settings';
 
 @Component({
@@ -9,8 +13,8 @@ import { SettingsComponent } from './+settings';
   selector: 'ng2-survey-app-app',
   templateUrl: 'ng2-survey-app.component.html',
   styleUrls: ['ng2-survey-app.component.css'],
-  directives: [MdToolbar, ROUTER_DIRECTIVES],
-  providers: [ROUTER_PROVIDERS],
+  directives: [MdToolbar, ROUTER_DIRECTIVES, MdIcon],
+  providers: [ROUTER_PROVIDERS, HTTP_PROVIDERS, MdIconRegistry],
   encapsulation: ViewEncapsulation.None
 })
 @Routes([
