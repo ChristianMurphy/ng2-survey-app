@@ -9,6 +9,7 @@ var map = {
 };
 /** User packages configuration. */
 var packages = {
+    // TODO: remove unused angular material packages
     '@angular2-material/core': {
         format: 'cjs',
         defaultExtension: 'js',
