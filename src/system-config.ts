@@ -10,6 +10,7 @@ const map: any = {
 
 /** User packages configuration. */
 const packages: any = {
+  // TODO: remove unused angular material packages
   '@angular2-material/core': {
     format: 'cjs',
     defaultExtension: 'js',
