@@ -101,6 +101,7 @@ var barrels = [
     'app/shared',
     'app/+home',
     'app/+settings',
+    'app/+question',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
