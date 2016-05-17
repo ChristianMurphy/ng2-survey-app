@@ -1,3 +1,21 @@
-<p>
-  settings works!
-</p>
+<h3>
+  Settings
+</h3>
+<md-input type="number" min="0" max="9999" required placeholder="User Pin"></md-input>
+<hr>
+<h3>
+  Advanced Settings
+</h3>
+<md-checkbox #isSecure [(ngModel)]="settings.isSecure">
+  Secure Connection.
+</md-checkbox>
+<br>
+<md-input placeholder="server address" [(ngModel)]="settings.host">
+  <span *ngIf="isSecure.checked" md-prefix>
+    https://
+  </span>
+  <span *ngIf="!isSecure.checked" md-prefix>
+    http://
+  </span>
+</md-input>
+
