@@ -7,6 +7,7 @@ import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
 
 import { HomeComponent } from './+home';
 import { SettingsComponent } from './+settings';
+import { QuestionComponent } from './+question';
 
 @Component({
   moduleId: module.id,
@@ -19,7 +20,8 @@ import { SettingsComponent } from './+settings';
 })
 @Routes([
   {path: '/', component: HomeComponent},
-  {path: '/settings', component: SettingsComponent}
+  {path: '/settings', component: SettingsComponent},
+  {path: '/question', component: QuestionComponent}
 ])
 // FIXME: replace OnInit hack with useAsDefault
 export class Ng2SurveyAppAppComponent implements OnInit {
