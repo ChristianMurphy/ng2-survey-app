@@ -2,6 +2,11 @@ import { Component } from '@angular/core';
 import { MdInput } from '@angular2-material/input';
 import { MdCheckbox } from '@angular2-material/checkbox';
 
+interface Settings {
+  isSecure: boolean;
+  host: string;
+}
+
 @Component({
   moduleId: module.id,
   selector: 'app-settings',
@@ -10,7 +15,7 @@ import { MdCheckbox } from '@angular2-material/checkbox';
   directives: [MdInput, MdCheckbox]
 })
 export class SettingsComponent {
-  public settings = {
+  public settings: Settings = {
     isSecure: true,
     host: 'example.com'
   };
