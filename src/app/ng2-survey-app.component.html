@@ -1,11 +1,11 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <md-toolbar color="primary">
-  <span>
+  <a class="link-text" [routerLink]="['/']">
     {{ title }}
-  </span>
+  </a>
   <span class="fill-remaining-space"></span>
-  <a [routerLink]="['/settings']">
+  <a [routerLink]="['settings']">
     <md-icon>
       settings
     </md-icon>

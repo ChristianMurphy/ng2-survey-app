@@ -13,9 +13,11 @@
     </time>
   </md-card-subtitle>
   <md-card-actions>
-    <button md-button>
-      START
-    </button>
+    <a [routerLink]="['question', survey.id]">
+      <button md-button>
+        START
+      </button>
+    </a>
   </md-card-actions>
 </md-card>
 
