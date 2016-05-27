@@ -5,7 +5,8 @@
 const map: any = {
   '@angular2-material': 'vendor/@angular2-material',
   'angular2-moment': 'vendor/angular2-moment',
-  'moment': 'vendor/moment'
+  'moment': 'vendor/moment',
+  'symbol-observable': 'vendor/symbol-observable'
 };
 
 /** User packages configuration. */
@@ -40,21 +41,6 @@ const packages: any = {
     defaultExtension: 'js',
     main: 'input.js'
   },
-  '@angular2-material/progress-bar': {
-    format: 'cjs',
-    defaultExtension: 'js',
-    main: 'progress-bar.js'
-  },
-  '@angular2-material/progress-circle': {
-    format: 'cjs',
-    defaultExtension: 'js',
-    main: 'progress-circle.js'
-  },
-  '@angular2-material/radio': {
-    format: 'cjs',
-    defaultExtension: 'js',
-    main: 'radio.js'
-  },
   '@angular2-material/toolbar': {
     format: 'cjs',
     defaultExtension: 'js',
@@ -69,6 +55,11 @@ const packages: any = {
     format: 'cjs',
     defaultExtension: 'js',
     main: 'moment.js'
+  },
+  'symbol-observable': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'index.js'
   }
 };
 

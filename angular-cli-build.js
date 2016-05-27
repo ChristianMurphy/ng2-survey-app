@@ -14,7 +14,8 @@ module.exports = function(defaults) {
       '@angular/**/*.js',
       '@angular2-material/**/*.js',
       'moment/**/*.js',
-      'angular2-moment/*.js'
+      'angular2-moment/*.js',
+      'symbol-observable/*.js'
     ]
   });
 };
