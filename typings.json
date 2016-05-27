@@ -6,9 +6,5 @@
   },
   "globalDependencies": {
     "es6-shim": "registry:dt/es6-shim#0.31.2+20160317120654"
-  },
-  "resolution": {
-    "main": "typings/main",
-    "browser": "typings/browser"
   }
 }
