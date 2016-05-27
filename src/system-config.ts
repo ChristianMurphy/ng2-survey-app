@@ -41,21 +41,6 @@ const packages: any = {
     defaultExtension: 'js',
     main: 'input.js'
   },
-  '@angular2-material/progress-bar': {
-    format: 'cjs',
-    defaultExtension: 'js',
-    main: 'progress-bar.js'
-  },
-  '@angular2-material/progress-circle': {
-    format: 'cjs',
-    defaultExtension: 'js',
-    main: 'progress-circle.js'
-  },
-  '@angular2-material/radio': {
-    format: 'cjs',
-    defaultExtension: 'js',
-    main: 'radio.js'
-  },
   '@angular2-material/toolbar': {
     format: 'cjs',
     defaultExtension: 'js',
