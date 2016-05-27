@@ -12,10 +12,10 @@ module.exports = function(defaults) {
       'reflect-metadata/**/*.+(js|js.map)',
       'rxjs/**/*.+(js|js.map)',
       '@angular/**/*.+(js|js.map)',
-      '@angular2-material/**/*',
-      'moment/**/*.',
-      'angular2-moment/*.',
-      'symbol-observable/*'
+      '@angular2-material/**/*.+(js|js.map)',
+      'moment/**/*.+(json|js|js.map)',
+      'angular2-moment/*.+(js|js.map)',
+      'symbol-observable/*.+(js|js.map)'
     ]
   });
 };
