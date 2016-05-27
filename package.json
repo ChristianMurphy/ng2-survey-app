@@ -51,6 +51,6 @@
     "ts-node": "^0.7.3",
     "tslint": "^3.6.0",
     "typescript": "^1.8.10",
-    "typings": "^0.8.1"
+    "typings": "^1.0.4"
   }
 }
