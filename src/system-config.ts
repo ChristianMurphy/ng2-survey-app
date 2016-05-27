@@ -5,7 +5,8 @@
 const map: any = {
   '@angular2-material': 'vendor/@angular2-material',
   'angular2-moment': 'vendor/angular2-moment',
-  'moment': 'vendor/moment'
+  'moment': 'vendor/moment',
+  'symbol-observable': 'vendor/symbol-observable'
 };
 
 /** User packages configuration. */
@@ -69,6 +70,11 @@ const packages: any = {
     format: 'cjs',
     defaultExtension: 'js',
     main: 'moment.js'
+  },
+  'symbol-observable': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'index.js'
   }
 };
 
