@@ -5,7 +5,7 @@ describe('ng2-survey-app App', function() {
 
   beforeEach(() => {
     page = new Ng2SurveyAppPage();
-  })
+  });
 
   it('should display message saying app works', () => {
     page.navigateTo();

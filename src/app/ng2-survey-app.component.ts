@@ -1,6 +1,5 @@
 import { OnInit, Component } from '@angular/core';
 import { Routes, Router, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router';
-import { HTTP_PROVIDERS } from '@angular/http';
 
 import { MdToolbar } from '@angular2-material/toolbar';
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
@@ -15,7 +14,7 @@ import { QuestionComponent } from './+question';
   templateUrl: 'ng2-survey-app.component.html',
   styleUrls: ['ng2-survey-app.component.css'],
   directives: [MdToolbar, ROUTER_DIRECTIVES, MdIcon],
-  providers: [ROUTER_PROVIDERS, HTTP_PROVIDERS, MdIconRegistry]
+  providers: [ROUTER_PROVIDERS, MdIconRegistry]
 })
 @Routes([
   {path: '/', component: HomeComponent},
