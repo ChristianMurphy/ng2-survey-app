@@ -10,15 +10,17 @@
   {{/unless}}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  
+
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body style="margin: 0;">
-  <ng2-survey-app-app>Loading...</ng2-survey-app-app>
+<body style="margin:0">
+  <app-root>Loading...</app-root>
 
   
 
-    {{#each scripts.polyfills}}<script src="{{.}}"></script>{{/each}}
+    {{#each scripts.polyfills}}
+    <script src="{{.}}"></script>
+    {{/each}}
     <script>
       System.import('system-config.js').then(function () {
         System.import('main');
@@ -26,8 +28,6 @@
     </script>
 
   
-
-
 
 </body>
 </html>
