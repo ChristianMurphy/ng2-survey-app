@@ -1,0 +1,12 @@
+<md-toolbar color="primary">
+  <a class="link-text" [routerLink]="['/']">
+    {{ title }}
+  </a>
+  <span class="fill-remaining-space"></span>
+  <a [routerLink]="['/settings']">
+    <md-icon>
+      settings
+    </md-icon>
+  </a>
+</md-toolbar>
+<router-outlet></router-outlet>
