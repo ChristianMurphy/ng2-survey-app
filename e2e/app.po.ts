@@ -4,6 +4,6 @@ export class Ng2SurveyAppPage {
   }
 
   getParagraphText() {
-    return element(by.css('ng2-survey-app-app h1')).getText();
+    return element(by.css('app-root h1')).getText();
   }
 }
