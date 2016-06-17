@@ -25,7 +25,7 @@ describe('Component: Settings', () => {
   }));
 
   it('should create the component', inject([], () => {
-    return builder.createAsync(SettingsComponentTestController)
+    return builder.createAsync(SettingsTestComponent)
       .then((fixture: ComponentFixture<any>) => {
         let query = fixture.debugElement.query(By.directive(SettingsComponent));
         expect(query).toBeTruthy();
@@ -35,12 +35,12 @@ describe('Component: Settings', () => {
 });
 
 @Component({
-  selector: 'test',
+  selector: 'test-settings',
   template: `
     <app-settings></app-settings>
   `,
   directives: [SettingsComponent]
 })
-class SettingsComponentTestController {
+class SettingsTestComponent {
 }
 
