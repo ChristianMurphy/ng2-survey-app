@@ -13,9 +13,9 @@ if (environment.production) {
 }
 
 const routes: RouterConfig = [
-  {path: '/', component: HomeComponent, index: true},
-  {path: '/settings', component: SettingsComponent},
-  {path: '/question/:number', component: QuestionComponent}
+  {path: '', component: HomeComponent},
+  {path: 'settings', component: SettingsComponent},
+  {path: 'question/:number', component: QuestionComponent}
 ];
 
 bootstrap(AppComponent, [HTTP_PROVIDERS, [provideRouter(routes)]]);
