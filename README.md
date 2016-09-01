@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/ChristianMurphy/ng2-survey-app.svg?branch=master)](https://travis-ci.org/ChristianMurphy/ng2-survey-app)
 [![Dependency Status](https://david-dm.org/ChristianMurphy/ng2-survey-app.svg)](https://david-dm.org/ChristianMurphy/ng2-survey-app)
-[![devDependency Status](https://david-dm.org/ChristianMurphy/ng2-survey-app/dev-status.svg)](https://david-dm.org/ChristianMurphy/ng2-survey-app#info=devDependencies)
+[![devDependency Status](https://david-dm.org/ChristianMurphy/ng2-survey-app/dev-status.svg)](https://david-dm.org/ChristianMurphy/ng2-survey-app?type=dev)
 
 Playground to try out Angular 2 with Typescript.
 
